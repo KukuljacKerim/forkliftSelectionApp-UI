@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>brand-overview works!</p>
+    <h2>Striped Rows</h2>
+    <p>The .table-striped class adds zebra-strieps to a table</p>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          BrandId
+        </tr>
+        <tr>
+          Brand Name
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let brand of brands">
+          <td>{{ brand.id }}</td>
+          <td>{{ brand.name }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
